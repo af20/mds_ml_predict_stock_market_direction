@@ -1,4 +1,4 @@
-# Machine Learning to Forecast Financial Market Direction
+# Machine Learning to Predict Financial Market Direction
 This work was created by me for the thesis of the master in data science for business and finance, La Statale University of Milan, academic year 2021/2022
 # How is structured the work
 The aim is to predict the monthly variation of a financial security using various machine learning models.
