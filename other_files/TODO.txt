@@ -1,0 +1,14 @@
+.... TODO .....
+(1) implementare un Neural Network semplice
+- aggiungere Variabili.... poi aggiungo le Macro, ma non è immediato
+
+... RAGIONAMENTI ...
+- Quindi sto facendo tutto 1d... se facessi funzione che trasforma in 1 month (prima di fare indicatori)
+
+..... POI ........
+- collegherò tutto al DB
+
+
+
+........ DO DO DONE ...........
+(1) riscrivere i Modelli (ora in Spark)
