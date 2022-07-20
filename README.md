@@ -21,9 +21,9 @@ The models are:
 
 # The logical procedure
 To get results follow this scheme
-- Choose a Model, for example Random Forest, which seems to be the best for this problem in terms of effectiveness/simplicicy ratio.
+- Choose a Model, for example Random Forest, which seems to be the best for this problem in terms of effectiveness/complexity ratio.
 - Go to MAIN.py file, include it with 'from cl_RF import *'
 - Define a new model 'M = c_Random_Forest()' => on init will be created a 'parameters grid' for 'Grid Search'
 - Launch a Randomized Grid Search 'M.compute_grid_search(X_train_, y_train_, 100)', in this example I choose 100 casual iterations. It will save a file in '/results' folder as 'Tid_PF_**RF**_N', where: Tid = ticker_to_predict, PF = PERIODS_TO_FORECAST, RF: Random Forest model, N: the N° of grid search done with Tid+PF+RF
-- Load the best model   M.get_best_model(N, idx=0, random_state=71) ==> that will be stored in  self.best_model    <=== note that N is the number of grid search done (explained in previous point)
-- Launch the prediction on the test set ==> M.fit_predict_model(M.best_model, X_train_, y_train_, X_test_, y_test_) and get the results in term of accuracy of the best model you have found with the Grid Search.
+- Load the best model   M.get_best_model(N, idx=0, random_state=71) ==> that will be stored in  self.best_model    <=== note that N is the number of grid search done (explained in previous point) and identifies a file in '/results'
+- Launch the prediction on the test set ==> M.fit_predict_model(M.best_model, X_train_, y_train_, X_test_, y_test_) and get the results in term of accuracy of the best model you have found with the Grid Search, and prediction for the future months (with the parameter: print_future_prediction=True)
